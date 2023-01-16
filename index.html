@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/doum.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="top">
+                <ul class="top-box">
+                    <li>
+                        <a href="#" class="login">로그인</a>
+                    </li>
+                    <li>
+                        <a href="#" class="mail"><span class="material-symbols-outlined">mail</span></a>
+                    </li>
+                    <li class="m-grid">
+                        <a href="#" class="grid">
+                        <span class="material-symbols-outlined">grid_view</span>
+                        </a>
+                        <div class="mini-map">
+                            <span class="tri"><img src="images/tri.png" alt="tri" style="width:20px;"></span>
+                            <div class="ic-link">
+                                <a href="#">
+                                    <img src="images/ic_cafe.png" alt="cafe">
+                                    <p>카페</p>
+                                </a>
+                                <a href="#">
+                                    <img src="images/ic_news.png" alt="news">
+                                    <p>뉴스</p>
+                                </a>
+                                <a href="#">
+                                    <img src="images/ic_map.png" alt="map">
+                                    <p>지도</p>
+                                </a>
+                                <a href="#">
+                                    <img src="images/ic_shopping.png" alt="shopping">
+                                    <p>쇼핑</p>
+                                </a>
+                            </div>
+                            <!-- ic-link -->
+                            <ul class="body-box">
+                                <li>
+                                    <a href="#">블로그</a>
+                                    <a href="#">티스토리</a>
+                                    <a href="#">브런치</a>
+                                    <a href="#">카카오TV</a>
+                                    <a href="#">게임</a>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠</a>
+                                    <a href="#">연예</a>
+                                    <a href="#">영화</a>
+                                    <a href="#">웹툰</a>
+                                    <a href="#">멜론</a>
+                                </li>
+                                <li>
+                                    <a href="#">어학사전</a>
+                                    <a href="#">번역</a>
+                                    <a href="#">단어장</a>
+                                    <a href="#">맞춤법검사</a>
+                                    <a href="#">백과사전</a>
+                                </li>
+                                <li>
+                                    <a href="#">금융</a>
+                                    <a href="#">부동산</a>
+                                    <a href="#">자동차</a>
+                                    <a href="#">메이커스</a>
+                                    <a href="#">같이가치</a>
+                                </li>
+                            </ul>
+                            <div class="mini-map-footer">
+                                <a href="#">전체보기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="gnb">
+                <nav>
+                    <a href="#" class="logo"><img src="images/cafe.png" alt="logo"></a>
+                    <ul class="gnbnav">
+                        <li><a href="#" class="active red">홈</a></li>
+                        <li><a href="#">팬카페</a></li>
+                        <li><a href="#">카페랭킹</a></li>
+                        <li><a href="#">내카페</a></li>
+                        <li><span></span></li>
+                        <li><a href="#" class="red">온라인 교실</a></li> 
+                    </ul>
+                    <form action="search" class="searchform">
+                        <select name="select">
+                            <option value="카페검색">카페검색</option>
+                            <option value="통합검색">통합검색</option>
+                            <option value="카페이름">카페이름</option>
+                            <option value="카페글">카페글</option>
+                        </select>
+                        <input type="text" name="search" class="searchtxt" placeholder="검색어를 입력하세요">
+                        <span class="material-symbols-outlined searchbtn">search</span>
+                    </form> 
+                </nav>
+            </div>
+        </header>
+    </div>
+    <section class="latest">
+        <div class="container">
+            <h1 class="subtitle"><span>이야기 하나 </span>얘네 왜 이러는지 아는 분?</h1>
+            <ul class="latest-title">
+                <li class="active"><a href="#">로봇 청소기 타고 놀다가 사고난 고양이.gif</a><span>쭉빵카페</span></li>
+                <li><a href="#">눈감고 자는 척 하는 고양이</a><span>꿈이있어 좋은카페</span></li>
+                <li><a href="#">주사맞는 댕댕이들..gif</a><span>이종격투기</span></li>
+                <li><a href="#">기지개 켜다가 잠들어버리는 강아지</a><span>여성시대 카페</span></li>
+            </ul>
+        </div>
+        <a href="#" class="left">
+            <span class="material-symbols-outlined">
+                chevron_left
+            </span>
+        </a>
+        <a href="#" class="right">
+            <span class="material-symbols-outlined">
+                chevron_right
+            </span>
+        </a>
+    </section>
+    <section class="first">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <a href="#" class="card">
+                        <img src="images/001.jpg" alt="001">
+                        <div class="card-content">
+                            <h1>꿈이 있어 행본한 사람들의 모임</h1>
+                            <p>수급자들의 알기쉬운 정보를 공유하며 교류하는 공간입니다.</p>
+                            <div class="hash">
+                                <span>추천카페</span>
+                                <span>기초생활수급자</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="card">
+                        <img src="images/002.jpg" alt="002">
+                        <div class="card-content">
+                            <h1>나를 찾아 길 떠나는 도보여행</h1>
+                            <p>걷기와 도보여행의 길잡이 카페</p>
+                            <div class="hash">
+                                <span>추천카페</span>
+                                <span>도보여행</span>
+                                <span>걷기</span>
+                                <span>나길도</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="card">
+                        <img src="images/003.jpg" alt="003">
+                        <div class="card-content">
+                            <h1>서울개인택시연대</h1>
+                            <p>서울 개인택시 기사들의 정보교류, 토론이 열리는 카페</p>
+                            <div class="hash">
+                                <span>추천카페</span>
+                                <span>연대</span>
+                                <span>개인택시연대</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="card">
+                        <img src="images/004.jpg" alt="004">
+                        <div class="card-content">
+                            <h1>쌍용마니아클럽</h1>
+                            <p>쌍용자동차에 관한 정보공유와 SUV를 타는 사람들의 카페</p>
+                            <div class="hash">
+                                <span>추천카페</span>
+                                <span>쌍용자동차동호회</span>
+                                <span>카이런</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="card">
+                        <img src="images/005.jpg" alt="005">
+                        <div class="card-content">
+                            <h1>63AMG CLUB</h1>
+                            <p>벤츠에 관심이 있으며, 자동차에 열정이 가득한 사람들의 카페</p>
+                            <div class="hash">
+                                <span>추천카페</span>
+                                <span>벤츠</span>
+                                <span>메르세데스</span>
+                                <span>AMG</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="card-make">
+                        <img src="images/plus_cafe.png" alt="plus">
+                        <div class="card-content">
+                            <h1>카페 만들기</h1>
+                            <p>지금 카페를 만들어 보세요!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="second container">
+        <div class="row">
+            <div class="col-8">
+                <div class="title-group">
+                    <h1>카페 인기글</h1>
+                    <p>2022.11.09.<span>11:00</span></p>
+                </div>
+                <ul class="list-pop">
+                    <li>
+                        <a href="#">
+                            <img src="images/001.jpg" alt="001">
+                            <p class="pop-content">
+                                <span>1</span>
+                                '파리의 연인' 김성원, 방광암 투병 중 별세... 향년 85세
+                            </p>
+                            <p class="pop-info">여성시대 카페</p>
+                            <p class="pop-comment">댓글 <span>43</span></p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="paging">
+                    <a href="javascript:void(0)" class="none">
+                        <span class="material-symbols-outlined">
+                        chevron_left
+                        </span>
+                    </a>
+                    <span><strong>1</strong></span><span>/</span><span>10</span>
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                        chevron_right
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <h1 class="right-title">공지</h1>
+                <ul class="info">
+                    <li><a href="#">[안내] 계정 통합으로 더 안전하고 편리해진 도움을 만들어 갑니다. 기대하세요.</a></li>
+                    <li><a href="#">[안내] 11/16 카페 서비스 점검 작업 안내</a></li>
+                    <li><a href="#">[필독] 계정 통합으로 더 안전하고 편리해진 도움을 만들어 갑니다. 기대하세요.</a></li>
+                    <li><a href="#">[안내] NEW 사진 편집기 오픈</a></li>
+                    <li><a href="#">[안내] 우리 카페 홍보 신청 방법(New)을 안내해 드려요!</a></li>
+                    <li><a href="#">[안내] 우리카페 공식팬카페 신청하기</a></li>
+                </ul>
+                <h1 class="right-title">카페 지원 안내</h1>
+                <div class="boxa">
+                    <p>니니즈와 함께하는<br>
+                        서포터즈 카페<br>
+                        구경하실래요?</p>
+                    <div class="face">
+                        <div class="eye1"></div>
+                        <div class="eye2"></div>
+                        <div class="nose">
+                            <!-- <div class="mouse">3</div> -->
+                            <div class="noseholl left"></div>
+                            <div class="noseholl right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="third">
+        <div class="container">
+            <div class="third-title">
+                <h1>
+                    <div class="fancafe">
+                    <span class="material-symbols-outlined">magic_button</span>
+                    </div> 팬카페
+                </h1>
+                <a href="#">전체보기</a>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="#" class="fan">
+                        <div class="num">1</div>
+                        <img src="images/010.jpg" alt="010">
+                        <div class="fancard">
+                            <img src="images/010.jpg" alt="010">
+                            <div class="fancontent">
+                                <h3>임영웅</h3>
+                                <div class="cafenum">
+                                    <span>카페 3등</span><span>응원 1등</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="fan">
+                        <div class="num">2</div>
+                        <img src="images/011.jpg" alt="011">
+                        <div class="fancard">
+                            <img src="images/011.jpg" alt="011">
+                            <div class="fancontent">
+                                <h3>박서진</h3>
+                                <div class="cafenum">
+                                    <span>카페 2등</span><span>응원 2등</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="fan">
+                        <div class="num">3</div>
+                        <img src="images/012.jpg" alt="012">
+                        <div class="fancard">
+                            <img src="images/012.jpg" alt="012">
+                            <div class="fancontent">
+                                <h3>정동원</h3>
+                                <div class="cafenum">
+                                    <span>카페 5등</span><span>응원 3등</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fourth container">
+        <h1 class="subtitle">카테테고리 <span>별 랭킹 보기</span></h1>
+        <ul class="star-category">
+            <li>
+                <a href="#" class="utitle">생활 · 경제</a>
+                <a href="#">생활 · 건강</a>
+                <a href="#">경제 · 금융</a>
+                <a href="#">정치 · 사회</a>
+            </li>
+            <li>
+                <a href="#" class="utitle">팬카페</a>
+            </li>
+            <li>
+                <a href="#" class="utitle">친목 · 모임</a>
+                <a href="#">친목</a>
+                <a href="#">여성</a>
+            </li>
+            <li>
+                <a href="#" class="utitle">게임 · 만화</a>
+                <a href="#">만화 · 애니메이션</a>
+                <a href="#">게임</a>
+            </li>
+            <li>
+                <a href="#" class="utitle">취미 · 레저</a>
+                <a href="#">취미</a>
+                <a href="#">스포츠 · 레저</a>
+            </li>
+            <li>
+                <a href="#" class="utitle">연예 · 예술</a>
+                <a href="#">영화</a>
+                <a href="#">음악</a>
+                <a href="#">방송 · 연예</a>
+                <a href="#">문학 · 예술</a>
+            </li>
+            <li>
+                <a href="#" class="utitle">지역 · 동문</a>
+                <a href="#">동창 · 동문</a>
+                <a href="#">지역 · 고향</a>
+                <a href="#">e-마을</a>
+                <a href="#">군대</a>
+                <a href="#">종교</a>
+            </li>
+            <li>
+                <a href="#" class="utitle">학문 · 교육</a>
+                <a href="#">교육 · 외국어</a>
+                <a href="#">컴퓨터 · 인터넷</a>
+                <a href="#">과학 · 인문</a>
+                <a href="#">대학 · 대학원</a>
+                <a href="#">초중고교</a>
+            </li>
+        </ul>
+    </section>
+    <footer class="container">
+        <img src="./images/cafe_b.png" alt="cafelogo">
+        <div class="copy">
+            <a href="#">서비스 약관/정책</a>
+            <span> · </span>
+            <a href="#">권리침해신고</a>
+            <span> · </span>
+            <a href="#">이용약관</a>
+            <span> · </span>
+            <a href="#">상거래 피해구제신청</a>
+            <span> · </span>
+            <a href="#">카페운영정책</a>
+            <span> · </span>
+            <a href="#">청소년보호정책</a>
+            <span> · </span>
+            <a href="#">고객센터</a>
+            <span> · </span>
+            <a href="#">문의하기</a>
+            <p><a href="#">&copy; Kakao Corp.</a></p>
+        </div>
+    </footer>
+</body>
+</html>
